@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--back-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller backgroundImage="back" contentMode="scaleAspectFill" id="AgC-eL-Hgc" customClass="InterfaceController">
+                    <items>
+                        <group width="1" height="46" alignment="center" verticalAlignment="center" id="r03-4r-IAo">
+                            <items>
+                                <label alignment="center" text="€" id="40">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </label>
+                                <label alignment="center" text="45" id="41">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </label>
+                                <label alignment="center" text="," id="dyx-9b-YEZ">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="42"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="center" text="00" id="42">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="20"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="154" height="45" alignment="center" verticalAlignment="center" text="0000 0000 0000 0000" textAlignment="center" id="78z-r2-W6j">
+                            <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="CardIDLabel" destination="78z-r2-W6j" id="name-outlet-78z-r2-W6j"/>
+                        <outlet property="CentsLabel" destination="42" id="name-outlet-42"/>
+                        <outlet property="EuroLabel" destination="41" id="name-outlet-41"/>
+                        <outlet property="EuroSignLabel" destination="40" id="name-outlet-40"/>
+                        <segue id="262" destination="92" kind="relationship" relationship="nextPage"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="-0.4358974"/>
+        </scene>
+        <scene sceneID="91">
+            <objects>
+                <controller id="92"/>
+            </objects>
+            <point key="canvasLocation" x="250" y="1"/>
+        </scene>
+    </scenes>
+</document>
