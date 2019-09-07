@@ -14,7 +14,7 @@
 </p>
 
 ### Features
-- [x] Card balance
-- [x] Latest transactions
-- [ ] Card balance in a today widget
-- [ ] Card balance on the Apple Watch
+- [x] 💸 Card balance
+- [x] 🧾 Latest transactions
+- [ ] 🗓 Card balance in a today widget
+- [ ] ⌚️ Card balance on the Apple Watch
